@@ -1,0 +1,163 @@
+/* 
+  -----------------------------------
+  Adaptations
+  by Project Seven Development
+  www.projectseven.com
+  Layout 4 - Media Queries
+  -----------------------------------
+*/
+
+/*1 Column for Narrow Browser Windows and Smartphones in both orientations*/
+@media only screen and (min-width: 0px) and (max-width: 679px) {
+body {
+	min-width: 0px;
+	margin: 6px;
+}
+#layout {
+	width: auto;
+}
+#masthead h1 {
+	font-size: 2em;
+	margin: 0px;
+}
+#masthead .subhead {
+	font-size: .5em;
+	margin: -.5em 0 10px 0;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+.three-column-column1, .three-column-column2, .three-column-column3 {
+	width: auto;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	float: none;
+}
+.three-column-content {
+	height: auto !important;
+	max-height: 888678px; 
+} 
+.main-content .content, .sidebar .content, .three-column-content {
+	padding: 10px 1em;
+}
+
+/*PMM Reflow*/
+#p7PMM_1 ul a.pmmfirst {
+	border-radius: 5px 5px 0px 0px;
+}
+#p7PMM_1 ul ul a.pmmfirst {
+	border-radius: 0px 0px 0px 0px;
+}
+.p7PMMh19 ul, .menu-bar {
+	display: block;
+	width: 100%;
+}
+.p7PMMh19 li, .menu-bar li {
+	float: none;
+	display: block;
+}
+.p7PMMh19 a, .menu-bar a {
+	padding: 3px 20px;
+	background-position: left center !important;
+	border-right: none;
+}
+.p7PMMh19 ul ul a {
+	background-position: right center !important;
+}
+.p7PMMh19 ul div {
+	margin: auto !important;
+	margin-left: 30% !important;
+}
+.p7PMMh19 ul ul div {
+	margin: auto !important;
+	margin-top: 0px !important;
+	margin-left: 0px !important;
+}
+}
+
+/*Exception rules for Smartphones in Landscape orientation only*/
+@media only screen and (max-device-width: 480px) and (orientation : landscape) {
+	body {
+		font-size: .75em;
+}
+}
+
+/*2 Column with top spanning menu for Medium Browser Windows and Portrait Tablets*/
+@media only screen and (min-width: 680px) and (max-width: 979px) and (orientation : portrait) {
+#layout {
+	width: auto;
+}
+.three-column-column1 {
+	width: 49%;
+	margin-right: 2%;
+}
+.three-column-column2 {
+	width: 49%;
+	margin-right: 0px;
+	margin-bottom: 15px;
+}
+.three-column-column3 {
+	width: 100%;
+	float: none;
+	margin-bottom: 15px;
+}
+.three-column-column3 .three-column-content {
+	height: auto !important;
+	max-height: 888678px; 
+	clear: both;
+}
+/*PMM Reflow*/
+.p7PMMh19 ul, .menu-bar {
+	display: block;
+	width: 100%;
+}
+.p7PMMh19 li, .menu-bar li {
+	float: none;
+	display: block;
+}
+.p7PMMh19 a, .menu-bar a {
+	padding: 5px 20px;
+	background-position: left center !important;
+	border-right: none;
+}
+.p7PMMh19 ul ul a {
+	background-position: right center !important;
+}
+.p7PMMh19 ul div {
+	margin: auto !important;
+	margin-left: 100px !important;
+}
+.p7PMMh19 ul ul div {
+	margin: auto !important;
+	margin-top: -40px !important;
+	margin-left: 80px !important;
+}
+}
+
+/*Portrait Tablet Exceptions to adjust padding in content areas*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+.main-content .content, .three-column-content {
+	padding: 1.5em 1.25em;
+}
+}
+
+
+
+/*Landscape Tablet Exceptions to adjust padding and reduce font size*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	body {
+	font-size: .85em;
+}
+.main-content .content, .three-column-content {
+	padding: 1em 1.3em;
+}
+.menu-bar a {
+	padding: 3px 10px;
+}
+}
+
+/*Turn off fixed-width*/
+@media only screen and (min-width: 680px) and (max-width: 1060px) and (orientation : landscape) {
+#layout {
+	width: auto;
+}
+}

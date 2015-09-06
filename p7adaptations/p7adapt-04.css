@@ -1,0 +1,369 @@
+/* 
+
+  -----------------------------------
+
+  Adaptations
+
+  by Project Seven Development
+
+  www.projectseven.com
+
+  Layout 4 - Static Menu
+
+  -----------------------------------
+
+*/
+
+
+
+/*FIX FOR SAFARI 6 AND IE9 SUB-PIXEL RENDERING RECURSION WITH EQUAL HEIGHTS COLUMN SCRIPT*/
+
+body {overflow-y: scroll;}
+
+
+
+body {
+	font-family: "Segoe UI", Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: #FFF;
+	margin: 20px;
+	font-size: 1em;
+
+}
+
+#layout {
+
+	margin: 0px auto;
+
+	width: 100%;
+
+}
+
+img.scaled {
+
+	height: auto;
+
+	width: 100%;
+
+	border-radius: 5px;
+
+	border: 1px solid #FFF;
+
+	box-sizing: border-box;
+
+	box-shadow: 5px 5px 20px #999;
+
+}
+
+img.scaled-plain {
+
+	height: auto;
+
+	width: 100%;
+
+}
+
+img.scaled-max {
+
+	height: auto;
+
+	width: auto;
+
+	max-width: 100%;
+
+	margin: 0px auto;
+
+	display: block;
+
+	border-radius: 5px;
+
+	border: 1px solid #FFF;
+
+	box-sizing: border-box;
+
+	box-shadow: 5px 5px 20px #999;
+
+}
+
+img.scaled-max-plain {
+
+	height: auto;
+
+	width: auto;
+
+	max-width: 100%;
+
+	margin: 0px auto;
+
+	display: block;
+
+}
+
+#masthead {
+
+	margin: 0px auto;
+
+}
+
+h1, h2, h3, h4, h5 {
+
+	font-weight: normal !important;
+
+	font-style: normal !important;
+
+/*	font-family: "Federo", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+*/
+	line-height: normal;
+
+	margin: 0px;
+
+}
+
+h1 {
+
+	font-size: 1.8em;
+
+}
+
+h2 {
+
+	font-size: 1.75em;
+
+	margin-top: 20px;
+
+}
+
+h3 {
+
+	font-size: 1.65em;
+
+	margin-top: 20px;
+
+}
+
+h4 {
+
+	font-size: 1.5em;
+
+	margin-top: 20px;
+
+}
+
+.header  {
+
+	margin: 0px !important;
+
+}
+
+p {
+
+	margin-top: 6px;
+
+	margin-bottom: 12px;
+
+}
+
+.fancy-quote {
+
+/*	font-family: "Federo", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+*/
+	letter-spacing: 0.15em;
+
+	margin-bottom: 15px;
+
+	color: #3C5060;
+
+}
+
+#masthead h1 {
+
+	font-size: 3em;
+
+	margin: 0px;
+
+}
+
+#masthead .subhead {
+
+	font-size: .7em;
+
+	margin: -.5em 0 10px 0;
+
+	text-transform: uppercase;
+
+	letter-spacing: 0.3em;
+
+}
+
+.navigation {
+
+	background-color: #000000;
+
+/*	background-image: url(images/chameleon.jpg);
+
+	background-repeat: no-repeat;
+
+	background-position: 0px -60px;
+*/
+	border-radius: 5px 5px 0px 0px;
+
+}
+
+ul.menu-bar {
+
+	margin: 0px;
+
+	padding: 0px;
+
+	zoom: 1;
+
+	border-bottom: 1px solid #000;
+
+	background-color: #222;
+
+	background: rgba(51,51,51,.6);
+
+	border-radius: 5px 5px 0px 0px;
+
+	overflow: hidden;
+
+}
+
+.menu-bar li {
+
+	list-style-type: none;
+
+	float: left;
+
+}
+
+.menu-bar a, .menu-bar a:visited {
+
+	color: #AAA;
+
+	display: block;
+
+	padding: 10px 15px;
+
+	text-decoration: none;
+
+	border-right: 1px solid #000;
+
+}
+
+.menu-bar a:hover, .menu-bar a:focus {
+
+	color: #DDD;
+
+}
+
+.main-content {
+
+	line-height: 1.5em;
+
+	background-color: #FFFFFF;
+
+	border: 1px solid #444;
+
+/*	border-top: none;
+
+*/	border-radius: 5px 5px 5px 5px;
+
+}
+
+.main-content .content {
+
+	padding: 20px 24px;
+
+	font-size: 1em;
+
+}
+
+.sidebar .content {
+
+	padding: 20px 20px;
+
+	font-size: 0.85em;
+
+	background-color: #7A96AD;
+
+	box-shadow: inset 0px 0px 30px #536F86;
+
+}
+
+/*Interior 3-Column Structure*/
+
+.inner-columns-wrapper {
+
+	overflow: hidden;
+
+}
+
+.three-column-column1 {
+
+	width: 32%;
+
+	margin-right: 2%;
+
+	float: left;
+
+}
+
+.three-column-column2 {
+
+	width: 32%;
+
+	margin-right: 2%;
+
+	float: left;
+
+}
+
+.three-column-column3 {
+
+	width: 32%;
+
+	float: left;
+
+}
+
+.three-column-content {
+
+	padding: 16px;
+
+	border: 1px solid #444;
+
+	border-radius: 5px;
+
+	font-size: 0.85em;
+
+	background-color: #F0F0F0;
+
+	box-shadow: inset 0px 0px 30px #CCC;
+
+}
+
+.three-column-column2 .three-column-content {
+
+	background-color: #AAA;
+
+	box-shadow: inset 0px 0px 30px #888;
+
+}
+
+#footer {
+
+	margin: 6px auto;
+
+	font-size: 0.8em;
+
+	text-transform: uppercase;
+
+}
+
+
+
+/*link styles*/
+
+a, a:visited {color: #039;}
+
+a:hover, a:focus {color: #000;}
